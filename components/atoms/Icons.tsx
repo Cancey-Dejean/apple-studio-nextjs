@@ -29,6 +29,7 @@ const SearchIcon = ({ className = "" }: IconProps) => {
     </svg>
   )
 }
+
 const BagIcon = ({ className = "" }: IconProps) => {
   return (
     <svg
