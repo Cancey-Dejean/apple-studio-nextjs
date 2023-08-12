@@ -22,8 +22,14 @@
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/public/fonts/sf-pro-display_semibold.woff2") format("woff2");
+  src: url("/fonts/sf-pro-display_semibold.woff2") format("woff2");
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sf-pro-display_bold.woff2") format("woff2");
+  font-weight: 700;
 }
 
 @layer base {
@@ -38,21 +44,57 @@
   body {
     @apply font-body bg-[#fafafa];
   }
+
+  img {
+    @apply max-w-full h-auto;
+  }
 }
 
 @layer components {
   .text-24 {
-    @apply text-[24px] tracking-[0.216px] leading-[28px] font-display font-semibold;
+    @apply text-[24px] tracking-[0.216px] leading-[28px];
   }
 
   .text-80 {
-    @apply text-[80px] tracking-[-1.2px] leading-[84px] font-display font-bold;
+    @apply text-[80px] tracking-[-1.2px] leading-[84px] !font-bold;
   }
 
   .text-19 {
-    @apply text-[19px] tracking-[0.228px] leading-[23px] font-display font-semibold;
+    @apply text-[19px] tracking-[0.228px] leading-[23px];
+  }
+
+  .text-96 {
+    @apply text-[96px] tracking-[-1.44px] leading-[100px] !font-bold;
+  }
+
+  .text-28 {
+    @apply text-[28px] tracking-[0.196px] leading-[32px] !font-bold;
   }
 }
 
 @layer utilities {
+  .text-gradient-1 {
+    background-image: linear-gradient(90deg, #ff9fe1 0%, #8727ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 418px 176px;
+    background-position: 50%;
+  }
+
+  .text-gradient-2 {
+    background-image: linear-gradient(
+      90deg,
+      #fbf4ec 10%,
+      #ecd7c8 23.3%,
+      #eea4bc 36.6%,
+      #be88c4 49.9%,
+      #9186e7 63.2%,
+      #92c9f9 76.6%,
+      #c7f8ff 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 418px 176px;
+    background-position: 50%;
+  }
 }

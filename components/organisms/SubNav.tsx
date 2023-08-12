@@ -43,7 +43,7 @@ const SubNav = ({ menuItems }: SubNavProps) => {
   return (
     <div
       className={classNames(
-        "sticky top-0 transition-all duration-[.3s] ease-in-out flex items-center",
+        "sticky top-0 z-20 transition-all duration-[.3s] ease-in-out flex items-center",
         colorChange
           ? " bg-white/80 border-b border-b-black/10 [backdrop-filter:saturate(180)_blur(20px)]"
           : "bg-transparent"
@@ -56,7 +56,7 @@ const SubNav = ({ menuItems }: SubNavProps) => {
             colorChange ? "border-b-transparent" : "border-b-black/10"
           )}
         >
-          <SubNavLogo url="/" />
+          <SubNavLogo url="/" label="Mac Studio" />
 
           <ul className="flex items-center gap-6">
             {menuItems.map((item, index) => (
