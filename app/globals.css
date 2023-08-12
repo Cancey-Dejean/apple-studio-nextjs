@@ -39,3 +39,20 @@
     @apply font-body bg-[#fafafa];
   }
 }
+
+@layer components {
+  .text-24 {
+    @apply text-[24px] tracking-[0.216px] leading-[28px] font-display font-semibold;
+  }
+
+  .text-80 {
+    @apply text-[80px] tracking-[-1.2px] leading-[84px] font-display font-bold;
+  }
+
+  .text-19 {
+    @apply text-[19px] tracking-[0.228px] leading-[23px] font-display font-semibold;
+  }
+}
+
+@layer utilities {
+}

@@ -3,16 +3,16 @@ import { ReactNode } from "react"
 
 interface TextProps {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
-  variant?: string
+  variant?: "text-24" | "text-80" | "text-19" | "sm-text"
   children: ReactNode
-  className: string
+  className?: string
 }
 
 const Text = ({
   as: Element = "h1",
   children,
   className = "",
-  variant = "",
+  variant,
 }: TextProps) => {
   return (
     <Element className={classNames(className, variant)}>{children}</Element>
