@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("/public/fonts/sf-pro-text_regular.woff2") format("woff2");
+  src: url("/fonts/sf-pro-text_regular.woff2") format("woff2");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("/public/fonts/sf-pro-text_semibold.woff2") format("woff2");
+  src: url("/fonts/sf-pro-text_semibold.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/public/fonts/sf-pro-display_regular.woff2") format("woff2");
+  src: url("/fonts/sf-pro-display_regular.woff2") format("woff2");
   font-weight: 400;
 }
 
@@ -36,6 +36,6 @@
   }
 
   body {
-    @apply font-body;
+    @apply font-body bg-[#fafafa];
   }
 }

@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "color-lightgrey": "#fafafa",
+        "color-blue": "#0071e3",
+      },
       fontFamily: {
         body: [
           "SF Pro Text",

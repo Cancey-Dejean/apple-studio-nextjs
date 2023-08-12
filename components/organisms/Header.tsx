@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Container from "../atoms/Container"
+import NavLink from "../atoms/NavLink"
 import { AppleIcon, BagIcon, SearchIcon } from "../atoms/Icons"
-import NavMenu from "../molecules/NavMenu"
 
 const menuList = [
   { label: "Store", url: "#" },
@@ -16,22 +16,41 @@ const menuList = [
   { label: "Support", url: "#" },
 ]
 
-interface HeaderProps {}
-
-const Header = ({}: HeaderProps) => {
+const Header = () => {
   return (
-    <header>
+    <header className="bg-white h-[200px]">
       <Container>
-        <Link href="/">
-          <AppleIcon />
-        </Link>
+        <nav>
+          <ul className="flex items-center justify-between">
+            <li>
+              <Link href="/" className="flex">
+                <AppleIcon aria-label="Home" />
+              </Link>
+            </li>
 
-        <NavMenu data={menuList} />
+            {menuList.map((item, index) => (
+              <li key={index}>
+                <NavLink link={item.url} label={item.label} />
+              </li>
+            ))}
 
-        <div>
-          <SearchIcon />
-          <BagIcon />
-        </div>
+            <li>
+              <button className="flex" type="button" aria-label="Search Button">
+                <SearchIcon />
+              </button>
+            </li>
+
+            <li>
+              <button
+                className="flex"
+                type="button"
+                aria-label="Shopping Bag Button"
+              >
+                <BagIcon aria-label="Shopping Bag" />
+              </button>
+            </li>
+          </ul>
+        </nav>
       </Container>
     </header>
   )
