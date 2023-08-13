@@ -10,6 +10,7 @@ interface TextProps {
     | "text-96"
     | "text-28"
     | "text-40"
+    | "text-64"
   children: ReactNode
   className?: string
 }

@@ -35,6 +35,7 @@ const config: Config = {
       },
       backgroundImage: {
         "chip-thumb": "url('/images/chip-highlight-1.jpeg')",
+        "chip-thumb-2": "url('/images/chip-highlight-2.jpeg')",
       },
     },
   },

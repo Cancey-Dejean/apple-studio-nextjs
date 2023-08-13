@@ -81,6 +81,10 @@
     @apply text-[40px] leading-[48px];
   }
 
+  .text-64 {
+    @apply text-[64px] leading-[1];
+  }
+
   .text-80 {
     @apply text-[80px] tracking-[-1.2px] leading-[84px] font-bold;
   }
