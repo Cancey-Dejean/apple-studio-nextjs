@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "820": "820px",
+      },
       colors: {
         "color-lightgrey": "#fafafa",
         "color-blue": "#0071e3",
@@ -29,6 +32,9 @@ const config: Config = {
           "Arial",
           "sans-serif",
         ],
+      },
+      backgroundImage: {
+        "chip-thumb": "url('/images/chip-highlight-1.jpeg')",
       },
     },
   },

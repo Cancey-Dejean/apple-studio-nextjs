@@ -1,16 +1,28 @@
 import React from "react"
 import Container from "../atoms/Container"
 import Text from "../atoms/Text"
-import Image from "next/image"
-import CardGradient from "./CardGradient"
+import CardGradient from "../molecules/CardGradient"
 
-type SuperPowerProps = {}
+const maxList = [
+  { text: "12-core CPU" },
+  { text: "Up to 38-core GPU" },
+  { text: "Up to 96GB unified memory" },
+  { text: "400GB/s memory bandwidth" },
+]
+const ultraList = [
+  { text: "24-core CPU" },
+  { text: "Up to 76-core GPU" },
+  { text: "Up to 192GB unified memory" },
+  { text: "800GB/s memory bandwidth" },
+]
+
+interface SuperPowerProps {}
 
 const SuperPower = ({}: SuperPowerProps) => {
   return (
     <section className="bg-black text-white pt-[228px] pb-[280px] text-center">
       <Container>
-        <Text as="h2" variant="text-96">
+        <Text as="h2" variant="text-96" className="!font-bold">
           Choose your
           <br />
           superpower.
@@ -25,26 +37,17 @@ const SuperPower = ({}: SuperPowerProps) => {
             />
 
             <ul className="flex flex-col gap-3">
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-1">
-                  12‑core CPU
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-1">
-                  Up to 38‑core GPU
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-1">
-                  Up to 96GB unified memory
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-1">
-                  400GB/s memory bandwidth
-                </Text>
-              </li>
+              {maxList.map((item, index) => (
+                <li key={index}>
+                  <Text
+                    as="h3"
+                    variant="text-28"
+                    className="text-gradient-1 !font-bold"
+                  >
+                    {item.text}
+                  </Text>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -54,27 +57,19 @@ const SuperPower = ({}: SuperPowerProps) => {
               gradientImg="/images/m2-ultra.jpeg"
               mainImgAlt="M2 Max Chip"
             />
+
             <ul className="flex flex-col gap-3">
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-2">
-                  24‑core CPU
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-2">
-                  Up to 76‑core GPU
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-2">
-                  Up to 192GB unified memory
-                </Text>
-              </li>
-              <li>
-                <Text as="h3" variant="text-28" className="text-gradient-2">
-                  800GB/s memory bandwidth
-                </Text>
-              </li>
+              {ultraList.map((item, index) => (
+                <li key={index}>
+                  <Text
+                    as="h3"
+                    variant="text-28"
+                    className="text-gradient-2 !font-bold"
+                  >
+                    {item.text}
+                  </Text>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

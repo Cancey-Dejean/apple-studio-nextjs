@@ -1,6 +1,8 @@
 import Container from "@/components/atoms/Container"
 import { AppleIcon, SearchIcon, BagIcon } from "@/components/atoms/Icons"
 import NavLink from "@/components/atoms/NavLink"
+import BigText from "@/components/organisms/BigText"
+import ChipHighlight from "@/components/organisms/ChipHighlight"
 import Hero from "@/components/organisms/Hero"
 import HeroBottom from "@/components/organisms/HeroBottom"
 import SubNav from "@/components/organisms/SubNav"
@@ -23,6 +25,8 @@ export default function Home() {
       <Hero />
       <HeroBottom />
       <SuperPower />
+      <BigText />
+      <ChipHighlight />
     </div>
   )
 }

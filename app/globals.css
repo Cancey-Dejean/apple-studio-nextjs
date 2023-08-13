@@ -51,28 +51,44 @@
 }
 
 @layer components {
-  .text-24 {
-    @apply text-[24px] tracking-[0.216px] leading-[28px];
+  .btn {
+    @apply flex items-center rounded-full gap-[0.3em] text-[21px] leading-[1.19048] tracking-[0.011em] py-[16px] px-[16px] border-2 border-transparent transition-all duration-[350ms] ease-in-out font-semibold font-display;
   }
 
-  .text-80 {
-    @apply text-[80px] tracking-[-1.2px] leading-[84px] !font-bold;
+  .btn-primary {
+    @apply bg-[#1d1d1f] text-white hover:bg-white hover:border-[#1d1d1f] hover:text-[#1d1d1f];
   }
 
-  .text-19 {
-    @apply text-[19px] tracking-[0.228px] leading-[23px];
-  }
-
-  .text-96 {
-    @apply text-[96px] tracking-[-1.44px] leading-[100px] !font-bold;
-  }
-
-  .text-28 {
-    @apply text-[28px] tracking-[0.196px] leading-[32px] !font-bold;
+  .btn-inverted {
+    @apply bg-white border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white;
   }
 }
 
 @layer utilities {
+  .text-19 {
+    @apply text-[19px] tracking-[0.228px] leading-[23px];
+  }
+
+  .text-24 {
+    @apply text-[24px] tracking-[0.216px] leading-[28px];
+  }
+
+  .text-28 {
+    @apply text-[28px] tracking-[0.196px] leading-[32px];
+  }
+
+  .text-40 {
+    @apply text-[40px] leading-[48px];
+  }
+
+  .text-80 {
+    @apply text-[80px] tracking-[-1.2px] leading-[84px] font-bold;
+  }
+
+  .text-96 {
+    @apply text-[96px] tracking-[-1.44px] leading-[100px];
+  }
+
   .text-gradient-1 {
     background-image: linear-gradient(90deg, #ff9fe1 0%, #8727ff 100%);
     -webkit-background-clip: text;
@@ -96,5 +112,32 @@
     -webkit-text-fill-color: transparent;
     background-size: 418px 176px;
     background-position: 50%;
+  }
+
+  .text-gradient-3 {
+    background-image: linear-gradient(35deg, #d676eb 30%, #8227ff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .text-gradient-4 {
+    background-image: linear-gradient(
+      35deg,
+      #fbf4ec 0%,
+      #ecd7c8 16.5%,
+      #eea4bc 33%,
+      #be88c4 49.5%,
+      #9186e7 66%,
+      #92c9f9 82.5%,
+      #c7f8ff 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .font-feature {
+    font-feature-settings: "numr";
   }
 }
