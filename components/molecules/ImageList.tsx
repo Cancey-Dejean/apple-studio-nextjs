@@ -19,11 +19,11 @@ const ImageList = ({ menuItems, bgImg = "" }: ImageListProps) => {
       className={classNames(
         "relative flex flex-col justify-center items-center text-white min-h-[980px]",
         bgImg,
-        "bg-no-repeat bg-cover bg-[#fafafa]",
+        "bg-no-repeat bg-cover bg-color-lightgrey",
         "after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-[rgba(0,0,0,.3)]"
       )}
     >
-      <ul className="max-w-820 w-full mx-auto relative z-10 flex flex-col gap-5">
+      <ul className="max-w-820 w-full mx-auto relative z-10 flex flex-col gap-10">
         {menuItems.map((item, index) => (
           <li
             className={classNames(

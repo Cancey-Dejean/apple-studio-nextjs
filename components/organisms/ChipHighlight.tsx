@@ -1,7 +1,5 @@
 import Container from "../atoms/Container"
-import Text from "../atoms/Text"
 import classNames from "classnames"
-import Link from "next/link"
 import TextHeader from "../molecules/TextHeader"
 import ItemStats from "../molecules/ItemStats"
 import ImageList from "../molecules/ImageList"
@@ -14,11 +12,31 @@ const highlightList = [
   },
   { text: "67 billion transistors", refNumber: "", refLink: "" },
   {
-    text: "1Up to 15.8 trillion operations per second",
+    text: "Up to 15.8 trillion operations per second",
     refNumber: "",
     refLink: "",
   },
   { text: "Support for up to 5 displays", refNumber: "", refLink: "" },
+  {
+    text: "H.264, HEVC, and ProRes encode and decode",
+    refNumber: "",
+    refLink: "",
+  },
+]
+
+const highlightList2 = [
+  {
+    text: "Up to 22 streams of 8K ProRes video playback",
+    refNumber: 5,
+    refLink: "#footnote-1",
+  },
+  { text: "134 billion transistors", refNumber: "", refLink: "" },
+  {
+    text: "Up to 31.6 trillion operations per second",
+    refNumber: "",
+    refLink: "",
+  },
+  { text: "Support for up to 8 displays", refNumber: "", refLink: "" },
   {
     text: "H.264, HEVC, and ProRes encode and decode",
     refNumber: "",
@@ -78,8 +96,8 @@ interface ChipHighlightProps {}
 
 const ChipHighlight = ({}: ChipHighlightProps) => {
   return (
-    <section className="bg-white">
-      <Container className="max-w-[1300px] bg-[#fafafa] mx-auto w-full !px-0 rounded-[30px] overflow-hidden">
+    <section className="bg-white pb-[100px]">
+      <Container className="max-w-[1300px] bg-color-lightgrey mx-auto w-full !px-0 rounded-[30px] overflow-hidden">
         <div className="pb-[60px] px-[108px]">
           <div className="max-w-820 mx-auto">
             <TextHeader
@@ -133,7 +151,7 @@ const ChipHighlight = ({}: ChipHighlightProps) => {
           </div>
         </div>
 
-        <ImageList menuItems={highlightList as any} bgImg="bg-chip-thumb-2" />
+        <ImageList menuItems={highlightList2 as any} bgImg="bg-chip-thumb-2" />
       </Container>
     </section>
   )

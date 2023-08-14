@@ -5,6 +5,7 @@ import BigText from "@/components/organisms/BigText"
 import ChipHighlight from "@/components/organisms/ChipHighlight"
 import Hero from "@/components/organisms/Hero"
 import HeroBottom from "@/components/organisms/HeroBottom"
+import MorePower from "@/components/organisms/MorePower"
 import SubNav from "@/components/organisms/SubNav"
 import SuperPower from "@/components/organisms/SuperPower"
 import Image from "next/image"
@@ -15,7 +16,6 @@ const subMenuItems = [
   { label: "Compare", url: "/about", cta: false },
   { label: "New to Mac", url: "/about", cta: false },
   { label: "Buy", url: "/services", cta: true },
-  // Add more menu items as needed
 ]
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
       <SuperPower />
       <BigText />
       <ChipHighlight />
+      <MorePower />
     </div>
   )
 }

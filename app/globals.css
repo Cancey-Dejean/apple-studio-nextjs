@@ -42,7 +42,7 @@
   }
 
   body {
-    @apply font-body bg-[#fafafa];
+    @apply font-body bg-color-lightgrey;
   }
 
   img {
