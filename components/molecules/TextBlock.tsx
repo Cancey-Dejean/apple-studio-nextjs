@@ -16,7 +16,7 @@ const TextBlock = ({
 }: TextBlockProps) => {
   return (
     <div className="flex flex-col items-start gap-[33px]">
-      <Text as="p" className="text-40">
+      <Text as="p" className="text40">
         {text}
       </Text>
 

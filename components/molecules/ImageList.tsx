@@ -1,6 +1,7 @@
 import classNames from "classnames"
 import Text from "../atoms/Text"
 import Link from "next/link"
+import ReferenceText from "../atoms/ReferenceText"
 
 interface ListItem {
   text?: string
@@ -32,19 +33,19 @@ const ImageList = ({ menuItems, bgImg = "" }: ImageListProps) => {
             )}
             key={index}
           >
-            <Text as="p" className="text-28 font-semibold flex items-start">
+            <Text as="p" className="text28 font-semibold flex items-start">
               <span>
                 {item.text}
 
                 {item.refNumber !== "" && (
-                  <sup className="relative top-auto font-feature align-[initial]">
+                  <ReferenceText>
                     <Link
                       href={item.refLink as string}
-                      className="align-[initial] text-28 hover:text-[#06c]"
+                      className="reference-text text28"
                     >
                       {item.refNumber}
                     </Link>
-                  </sup>
+                  </ReferenceText>
                 )}
               </span>
             </Text>

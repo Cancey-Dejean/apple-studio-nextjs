@@ -1,16 +1,17 @@
 import classNames from "classnames"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface TextProps {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
   variant?:
     | "text-24"
-    | "text-80"
-    | "text-19"
-    | "text-96"
-    | "text-28"
-    | "text-40"
-    | "text-64"
+    | "text80"
+    | "text19"
+    | "text96"
+    | "text28"
+    | "text40"
+    | "text64"
   children: ReactNode
   className?: string
 }
@@ -23,7 +24,7 @@ const Text = ({
 }: TextProps) => {
   return (
     <Element
-      className={classNames("font-display font-semibold", className, variant)}
+      className={twMerge("font-display font-semibold", variant, className)}
     >
       {children}
     </Element>

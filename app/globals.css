@@ -65,31 +65,32 @@
 }
 
 @layer utilities {
-  .text-19 {
+  .text19 {
     @apply text-[19px] tracking-[0.228px] leading-[23px];
   }
 
-  .text-24 {
+  .text24 {
     @apply text-[24px] tracking-[0.216px] leading-[28px];
+    /* font-size: 24px; */
   }
 
-  .text-28 {
+  .text28 {
     @apply text-[28px] tracking-[0.196px] leading-[32px];
   }
 
-  .text-40 {
+  .text40 {
     @apply text-[40px] leading-[48px];
   }
 
-  .text-64 {
+  .text64 {
     @apply text-[64px] leading-[1];
   }
 
-  .text-80 {
+  .text80 {
     @apply text-[80px] tracking-[-1.2px] leading-[84px] font-bold;
   }
 
-  .text-96 {
+  .text96 {
     @apply text-[96px] tracking-[-1.44px] leading-[100px];
   }
 
@@ -143,5 +144,9 @@
 
   .font-feature {
     font-feature-settings: "numr";
+  }
+
+  .reference-text {
+    @apply align-[initial] hover:text-[#06c];
   }
 }

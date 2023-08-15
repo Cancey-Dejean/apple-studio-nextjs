@@ -1,6 +1,5 @@
-import classNames from "classnames"
 import Link from "next/link"
-import { AnchorHTMLAttributes } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface NavLinkProps {
   link: string
@@ -19,7 +18,7 @@ const NavLink = ({
   return (
     <Link
       href={link}
-      className={classNames(
+      className={twMerge(
         "text-[12px] tracking-[-.01em] font-body text-black/80 leading-[1]",
         cta && "bg-color-blue text-white rounded-full px-[10px] py-[3px]",
         className

@@ -1,6 +1,6 @@
-import classNames from "classnames"
 import Link from "next/link"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ButtonLinkProps {
   variant?: "btn-primary" | "btn-secondary" | "btn-inverted"
@@ -23,14 +23,16 @@ const ButtonLink = ({
   return linkable ? (
     <Link
       href={url}
-      className={classNames("btn", `${variant}`, className, { ...props })}
+      className={twMerge("btn", `${variant}`, className)}
+      {...props}
     >
       {children || <span>Linkable Button</span>}
     </Link>
   ) : (
     <button
       onClick={onClick}
-      className={classNames("btn", `${variant}`, className, { ...props })}
+      className={twMerge("btn", `${variant}`, className)}
+      {...props}
     >
       {children || <span>Button</span>}
     </button>

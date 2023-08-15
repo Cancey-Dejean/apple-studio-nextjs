@@ -15,7 +15,7 @@ const Hero = ({}: Props) => {
             Mac Studio
           </Text>
 
-          <Text as="h1" variant="text-80">
+          <Text as="h1" variant="text80">
             A true powerhouse.
           </Text>
 
@@ -29,7 +29,7 @@ const Hero = ({}: Props) => {
           />
 
           <div className="flex items-center pt-[39px] pb-[139px] gap-[28px]">
-            <Text as="p" variant="text-19">
+            <Text as="p" variant="text19">
               From $166.58/mo. for 12 mo. or $1999<Link href="#">*</Link>
             </Text>
 
@@ -38,7 +38,7 @@ const Hero = ({}: Props) => {
               aria-hidden="true"
             ></span>
 
-            <Text as="p" className="flex items-center gap-1" variant="text-19">
+            <Text as="p" className="flex items-center gap-1" variant="text19">
               <Link href="/" className="hover:underline">
                 Watch the event
               </Link>

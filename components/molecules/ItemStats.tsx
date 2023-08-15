@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Text from "../atoms/Text"
 import classNames from "classnames"
+import ReferenceText from "../atoms/ReferenceText"
 
 interface ItemStatsProps {
   className?: string
@@ -28,7 +29,7 @@ const ItemStats = ({
         {textTop}
       </Text>
 
-      <Text as="h4" className="text-64 text-[#1d1d1f]">
+      <Text as="h4" className="text64 text-[#1d1d1f]">
         {textMiddle}
       </Text>
 
@@ -39,14 +40,11 @@ const ItemStats = ({
         {textBottom}
 
         {textBottom !== "" && (
-          <sup className="relative top-auto font-feature align-[initial]">
-            <Link
-              href={refTextLink}
-              className="align-[initial] !text-[17px] hover:text-[#06c]"
-            >
+          <ReferenceText>
+            <Link href={refTextLink} className="reference-text !text-[17px]">
               {refText}
             </Link>
-          </sup>
+          </ReferenceText>
         )}
       </Text>
     </div>

@@ -1,5 +1,5 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ContainerProps {
   className?: string
@@ -9,10 +9,7 @@ interface ContainerProps {
 const Container = ({ className = "", children }: ContainerProps) => {
   return (
     <div
-      className={classNames(
-        "max-w-[1024px] w-full mx-auto px-[22px]",
-        className
-      )}
+      className={twMerge("max-w-[1024px] w-full mx-auto px-[22px]", className)}
     >
       {children}
     </div>

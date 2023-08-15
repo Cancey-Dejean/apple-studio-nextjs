@@ -22,14 +22,14 @@ const TextHeader = ({
       <Text
         as="h3"
         className={classNames(
-          "text-96 mb-[20px] text-gradient-3 font-bold",
+          "text96 mb-[20px] text-gradient-3 font-bold",
           titleStyles
         )}
       >
         {title}
       </Text>
 
-      <Text as="p" className={classNames("text-28 font-semibold", descStyles)}>
+      <Text as="p" className={classNames("text28 font-semibold", descStyles)}>
         {desc}
       </Text>
     </div>

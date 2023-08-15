@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "../atoms/Container"
 import Text from "../atoms/Text"
-import CardGradient from "../molecules/CardGradient"
+import CardGradient from "./CardGradient"
 
 const maxList = [
   { text: "12-core CPU" },
@@ -22,7 +22,7 @@ const SuperPower = ({}: SuperPowerProps) => {
   return (
     <section className="bg-black text-white pt-[228px] pb-[280px] text-center">
       <Container>
-        <Text as="h2" variant="text-96" className="!font-bold">
+        <Text as="h2" variant="text96" className="!font-bold">
           Choose your
           <br />
           superpower.
@@ -41,7 +41,7 @@ const SuperPower = ({}: SuperPowerProps) => {
                 <li key={index}>
                   <Text
                     as="h3"
-                    variant="text-28"
+                    variant="text28"
                     className="text-gradient-1 !font-bold"
                   >
                     {item.text}
@@ -63,7 +63,7 @@ const SuperPower = ({}: SuperPowerProps) => {
                 <li key={index}>
                   <Text
                     as="h3"
-                    variant="text-28"
+                    variant="text28"
                     className="text-gradient-2 !font-bold"
                   >
                     {item.text}
