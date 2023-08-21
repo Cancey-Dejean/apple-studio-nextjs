@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Text from "../atoms/Text"
-import classNames from "classnames"
 import ReferenceText from "../atoms/ReferenceText"
+import { twMerge } from "tailwind-merge"
 
 interface ItemStatsProps {
   className?: string
@@ -21,7 +21,7 @@ const ItemStats = ({
   refTextLink = "/",
 }: ItemStatsProps) => {
   return (
-    <div className={classNames("flex flex-col gap-1 items-start", className)}>
+    <div className={twMerge("flex flex-col gap-1 items-start", className)}>
       <Text
         as="p"
         className="!text-[17px] leading-[21px] font-body text-[#86868b]"

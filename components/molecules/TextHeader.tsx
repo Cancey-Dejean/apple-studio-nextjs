@@ -1,6 +1,6 @@
-import classNames from "classnames"
 import React from "react"
 import Text from "../atoms/Text"
+import { twMerge } from "tailwind-merge"
 
 interface TextHeaderProps {
   sectionClass?: string
@@ -18,18 +18,18 @@ const TextHeader = ({
   descStyles = "",
 }: TextHeaderProps) => {
   return (
-    <div className={classNames(sectionClass)}>
+    <div className={twMerge(sectionClass)}>
       <Text
         as="h3"
-        className={classNames(
-          "text96 mb-[20px] text-gradient-3 font-bold",
+        className={twMerge(
+          "text96 mb-[20px] bg-text-gradient-3 text-gradient-clip font-bold",
           titleStyles
         )}
       >
         {title}
       </Text>
 
-      <Text as="p" className={classNames("text28 font-semibold", descStyles)}>
+      <Text as="p" className={twMerge("text28 font-semibold", descStyles)}>
         {desc}
       </Text>
     </div>

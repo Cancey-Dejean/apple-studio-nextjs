@@ -28,7 +28,7 @@ const SuperPower = ({}: SuperPowerProps) => {
           superpower.
         </Text>
 
-        <div className="flex items-start">
+        <div className="flex items-start gap-4">
           <div className="flex-1">
             <CardGradient
               mainImg="/images/chip-gradient.png"
@@ -42,7 +42,7 @@ const SuperPower = ({}: SuperPowerProps) => {
                   <Text
                     as="h3"
                     variant="text28"
-                    className="text-gradient-1 !font-bold"
+                    className="bg-text-gradient-1 text-gradient-clip !font-bold"
                   >
                     {item.text}
                   </Text>
@@ -64,7 +64,7 @@ const SuperPower = ({}: SuperPowerProps) => {
                   <Text
                     as="h3"
                     variant="text28"
-                    className="text-gradient-2 !font-bold"
+                    className="bg-text-gradient-2 text-gradient-clip !font-bold"
                   >
                     {item.text}
                   </Text>

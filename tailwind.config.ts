@@ -13,7 +13,10 @@ const config: Config = {
       },
       colors: {
         "color-lightgrey": "#fafafa",
+        "color-grey": "#d2d2d7",
         "color-blue": "#0071e3",
+        "color-powder-blue": "#c7f8ff",
+        "color-purple": "#9d44fd",
       },
       fontFamily: {
         body: [
@@ -36,6 +39,12 @@ const config: Config = {
       backgroundImage: {
         "chip-thumb": "url('/images/chip-highlight-1.jpeg')",
         "chip-thumb-2": "url('/images/chip-highlight-2.jpeg')",
+        "text-gradient-1": "linear-gradient(90deg, #ff9fe1 0%, #8727ff 100%)",
+        "text-gradient-2":
+          "linear-gradient(90deg, #fbf4ec 10%,#ecd7c8 23.3%,#eea4bc 36.6%,#be88c4 49.9%,#9186e7 63.2%,#92c9f9 76.6%,#c7f8ff 90%)",
+        "text-gradient-3": "linear-gradient(35deg, #d676eb 30%, #8227ff 70%)",
+        "text-gradient-4":
+          "linear-gradient(35deg, #fbf4ec 0%, #ecd7c8 16.5%,#eea4bc 33%,#be88c4 49.5%,#9186e7 66%,#92c9f9 82.5%,#c7f8ff 100%)",
       },
     },
   },

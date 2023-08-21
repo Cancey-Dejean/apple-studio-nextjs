@@ -21,29 +21,42 @@ const progressList = [
     label: "Mac Studio with M2 Ultra",
     number: "6.1",
     numberOnly: false,
-    numberColor: "text-[#c7f8ff]",
-    progressColor: "bg-white",
+    numberColor: "text-color-powder-blue",
+    progressColor: "bg-text-gradient-4",
+    progressWidth: "100%",
   },
   {
     label: "Mac Studio with M2 Max",
-    number: "6.1",
+    number: "3.6",
     numberOnly: false,
-    numberColor: "color-powder-blue",
-    progressColor: "#fff",
+    numberColor: "text-color-purple",
+    progressColor: "bg-text-gradient-1",
+    progressWidth: "59%",
   },
   {
     label: "Mac Studio with M1 Ultra",
-    number: "6.1",
+    number: "",
     numberOnly: true,
-    numberColor: "#c7f8ff",
-    progressColor: "#fff",
+    numberColor: "",
+    progressColor: "bg-color-grey",
+    progressWidth: "30%",
   },
   {
     label: "Mac Studio with M1 Max",
-    number: "6.1",
+    number: "",
     numberOnly: true,
-    numberColor: "#c7f8ff",
-    progressColor: "#fff",
+    numberColor: "",
+    progressColor: "bg-color-grey",
+    progressWidth: "23%",
+  },
+  {
+    label:
+      "27-inch iMac with 10-core Intel Core i9 and Radeon Pro 5700 XT (baseline)",
+    number: "",
+    numberOnly: true,
+    numberColor: "",
+    progressColor: "bg-color-grey",
+    progressWidth: "16%",
   },
 ]
 
@@ -107,6 +120,7 @@ const MorePower = ({}: MorePowerProps) => {
                 <ProgressStat
                   text={item.label}
                   progressColor={item.progressColor}
+                  progressWidth={item.progressWidth}
                   number={item.number}
                   numberColor={item.numberColor}
                   numberOnly={item.numberOnly}

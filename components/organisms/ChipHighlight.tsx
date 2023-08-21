@@ -102,6 +102,7 @@ const ChipHighlight = ({}: ChipHighlightProps) => {
           <div className="max-w-820 mx-auto">
             <TextHeader
               sectionClass=" w-full pt-[163px]"
+              titleStyles="[background-position:inherit;]"
               title="M2 Max"
               desc="M2 Max brings power to tackle challenges of almost any size. From recording your own beats or mixing professional-quality music to editing your first video or adding effects to a feature-length film, the lightning-fast M2 Max has your back."
             />
@@ -128,7 +129,7 @@ const ChipHighlight = ({}: ChipHighlightProps) => {
             <TextHeader
               sectionClass="max-w-820 mx-auto w-full pt-[163px]"
               title="M2 Max"
-              titleStyles="text-gradient-4"
+              titleStyles="bg-text-gradient-4 text-gradient-clip [background-position:inherit;]"
               desc="Built from two M2 Max chips, M2 Ultra lets you power through workflows on an unprecedented scale. So you can quickly transcode and export videos, run complex particle simulations, or work with massive 3D environments that were previously impossible to render. And with twice the Media Engine resources, M2 Ultra can support up to 22 streams of 8K ProRes 422 video playback — something no other personal computer can do."
             />
 

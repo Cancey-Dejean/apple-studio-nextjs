@@ -3,6 +3,7 @@ import Text from "../atoms/Text"
 
 interface ProgressStatProps {
   progressColor?: string
+  progressWidth?: string
   text?: string
   numberColor?: string
   number?: string
@@ -10,6 +11,7 @@ interface ProgressStatProps {
 }
 
 const ProgressStat = ({
+  progressWidth = "100%",
   progressColor = "white",
   text = "Text goes here",
   number = "",
@@ -22,13 +24,18 @@ const ProgressStat = ({
         <div
           className="bar-mask"
           style={{
-            width: "100%",
+            width: progressWidth,
           }}
         >
-          <hr className={classNames("h-[10px] rounded-[5px]", progressColor)} />
+          <hr
+            className={classNames(
+              "h-[10px] rounded-[5px] border-none",
+              progressColor
+            )}
+          />
         </div>
 
-        <Text as="h4" className="pt-3 text24 font-normal text-[#d2d2d7]">
+        <Text as="h4" className="pt-3 text24 font-normal text-color-grey">
           {text}
         </Text>
       </div>

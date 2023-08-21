@@ -94,52 +94,11 @@
     @apply text-[96px] tracking-[-1.44px] leading-[100px];
   }
 
-  .text-gradient-1 {
-    background-image: linear-gradient(90deg, #ff9fe1 0%, #8727ff 100%);
+  .text-gradient-clip {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 418px 176px;
     background-position: 50%;
-  }
-
-  .text-gradient-2 {
-    background-image: linear-gradient(
-      90deg,
-      #fbf4ec 10%,
-      #ecd7c8 23.3%,
-      #eea4bc 36.6%,
-      #be88c4 49.9%,
-      #9186e7 63.2%,
-      #92c9f9 76.6%,
-      #c7f8ff 90%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 418px 176px;
-    background-position: 50%;
-  }
-
-  .text-gradient-3 {
-    background-image: linear-gradient(35deg, #d676eb 30%, #8227ff 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-  }
-
-  .text-gradient-4 {
-    background-image: linear-gradient(
-      35deg,
-      #fbf4ec 0%,
-      #ecd7c8 16.5%,
-      #eea4bc 33%,
-      #be88c4 49.5%,
-      #9186e7 66%,
-      #92c9f9 82.5%,
-      #c7f8ff 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
   }
 
   .font-feature {

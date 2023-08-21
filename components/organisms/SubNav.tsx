@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Container from "../atoms/Container"
 import SubNavLogo from "../atoms/SubNavLogo"
 import NavLink from "../atoms/NavLink"
+import { twMerge } from "tailwind-merge"
 
 interface MenuItem {
   label: string
@@ -65,7 +66,10 @@ const SubNav = ({ menuItems }: SubNavProps) => {
                   link={item.url}
                   label={item.label}
                   cta={item.cta}
-                  className="hover:text-color-blue [transition-all duration-[.3s] ease-in-out]"
+                  className={twMerge(
+                    "hover:text-color-blue [transition-all duration-[.3s] ease-in-out]",
+                    item.cta ? "hover:text-white/80" : null
+                  )}
                 />
               </li>
             ))}
