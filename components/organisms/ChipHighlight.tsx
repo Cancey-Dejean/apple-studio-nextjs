@@ -92,9 +92,7 @@ const itemStats2 = [
   },
 ]
 
-interface ChipHighlightProps {}
-
-const ChipHighlight = ({}: ChipHighlightProps) => {
+const ChipHighlight = () => {
   return (
     <section className="bg-white pb-[100px]">
       <Container className="max-w-[1300px] bg-color-lightgrey mx-auto w-full !px-0 rounded-[30px] overflow-hidden">

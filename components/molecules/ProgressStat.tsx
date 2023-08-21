@@ -1,7 +1,7 @@
 import classNames from "classnames"
 import Text from "../atoms/Text"
 
-interface ProgressStatProps {
+type ProgressStatProps = {
   progressColor?: string
   progressWidth?: string
   text?: string

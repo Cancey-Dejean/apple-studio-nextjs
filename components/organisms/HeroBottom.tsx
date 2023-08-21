@@ -3,9 +3,7 @@ import Text from "../atoms/Text"
 import Container from "../atoms/Container"
 import Image from "next/image"
 
-interface HeroBottomProps {}
-
-const HeroBottom = ({}: HeroBottomProps) => {
+const HeroBottom = () => {
   return (
     <section>
       <Container>

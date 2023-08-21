@@ -2,7 +2,7 @@ import React from "react"
 import Text from "../atoms/Text"
 import { twMerge } from "tailwind-merge"
 
-interface TextHeaderProps {
+type TextHeaderProps = {
   sectionClass?: string
   title?: string
   titleStyles?: string

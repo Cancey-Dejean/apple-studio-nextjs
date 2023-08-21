@@ -3,13 +3,13 @@ import Text from "../atoms/Text"
 import Link from "next/link"
 import ReferenceText from "../atoms/ReferenceText"
 
-interface ListItem {
+type ListItem = {
   text?: string
   refNumber?: string
   refLink?: string
 }
 
-interface ImageListProps {
+type ImageListProps = {
   menuItems: ListItem[]
   bgImg?: string
 }

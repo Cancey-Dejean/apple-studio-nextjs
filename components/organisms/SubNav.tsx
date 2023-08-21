@@ -6,13 +6,13 @@ import SubNavLogo from "../atoms/SubNavLogo"
 import NavLink from "../atoms/NavLink"
 import { twMerge } from "tailwind-merge"
 
-interface MenuItem {
+type MenuItem = {
   label: string
   url: string
   cta?: boolean
 }
 
-interface SubNavProps {
+type SubNavProps = {
   menuItems: MenuItem[]
 }
 

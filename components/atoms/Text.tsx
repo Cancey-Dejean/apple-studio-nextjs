@@ -1,8 +1,7 @@
-import classNames from "classnames"
 import { ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 
-interface TextProps {
+type TextProps = {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
   variant?:
     | "text-24"

@@ -3,7 +3,7 @@ import Text from "../atoms/Text"
 import Link from "next/link"
 import ButtonLink from "../atoms/ButtonLink"
 
-interface TextBlockProps {
+type TextBlockProps = {
   text: string
   btnLabel?: string
   btnUrl?: string

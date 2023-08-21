@@ -4,9 +4,7 @@ import Container from "../atoms/Container"
 import Image from "next/image"
 import Link from "next/link"
 
-type Props = {}
-
-const Hero = ({}: Props) => {
+const Hero = () => {
   return (
     <section className="pt-[50px]">
       <Container>

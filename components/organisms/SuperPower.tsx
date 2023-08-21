@@ -16,9 +16,7 @@ const ultraList = [
   { text: "800GB/s memory bandwidth" },
 ]
 
-interface SuperPowerProps {}
-
-const SuperPower = ({}: SuperPowerProps) => {
+const SuperPower = () => {
   return (
     <section className="bg-black text-white pt-[228px] pb-[280px] text-center">
       <Container>

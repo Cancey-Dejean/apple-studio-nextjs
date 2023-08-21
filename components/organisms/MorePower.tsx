@@ -61,9 +61,7 @@ const progressList = [
   },
 ]
 
-interface MorePowerProps {}
-
-const MorePower = ({}: MorePowerProps) => {
+const MorePower = () => {
   return (
     <section className="pb-[100px] bg-white">
       <Container className="max-w-[1100px] rounded-[30px] overflow-hidden bg-color-lightgrey !px-0">

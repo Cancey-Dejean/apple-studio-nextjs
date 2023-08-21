@@ -1,8 +1,6 @@
 import TextBlock from "../molecules/TextBlock"
 
-type Props = {}
-
-const BigText = (props: Props) => {
+const BigText = () => {
   return (
     <section className="py-[200px] bg-white">
       <div className="max-w-[816px] mx-auto w-full">

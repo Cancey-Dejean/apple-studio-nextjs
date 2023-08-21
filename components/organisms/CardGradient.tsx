@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-interface CardGradientProps {
+type CardGradientProps = {
   mainImg: string
   mainImgAlt: string
   gradientImg?: string

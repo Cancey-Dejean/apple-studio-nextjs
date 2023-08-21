@@ -1,7 +1,8 @@
+import { type } from "os"
 import { ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 
-interface ContainerProps {
+type ContainerProps = {
   className?: string
   children: ReactNode
 }

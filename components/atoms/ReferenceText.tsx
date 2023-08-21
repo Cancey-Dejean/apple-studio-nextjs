@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 
-interface ReferenceTextProps {
+type ReferenceTextProps = {
   className?: string
   children?: ReactNode
 }

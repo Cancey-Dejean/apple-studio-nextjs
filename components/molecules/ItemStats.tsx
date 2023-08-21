@@ -3,7 +3,7 @@ import Text from "../atoms/Text"
 import ReferenceText from "../atoms/ReferenceText"
 import { twMerge } from "tailwind-merge"
 
-interface ItemStatsProps {
+type ItemStatsProps = {
   className?: string
   textTop?: string
   textMiddle?: string

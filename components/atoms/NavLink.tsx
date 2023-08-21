@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { twMerge } from "tailwind-merge"
 
-interface NavLinkProps {
+type NavLinkProps = {
   link: string
   label: string
   className?: string

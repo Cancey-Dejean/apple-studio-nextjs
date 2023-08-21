@@ -2,7 +2,7 @@ import Link from "next/link"
 import { ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 
-interface ButtonLinkProps {
+type ButtonLinkProps = {
   variant?: "btn-primary" | "btn-secondary" | "btn-inverted"
   url?: string
   className?: string
