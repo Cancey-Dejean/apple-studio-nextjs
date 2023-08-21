@@ -17,6 +17,7 @@ const config: Config = {
         "color-blue": "#0071e3",
         "color-powder-blue": "#c7f8ff",
         "color-purple": "#9d44fd",
+        "color-purple-2": "#9091ff",
       },
       fontFamily: {
         body: [

@@ -4,16 +4,17 @@ import Text from "../atoms/Text"
 import classNames from "classnames"
 import ReferenceText from "../atoms/ReferenceText"
 import ProgressStat from "../molecules/ProgressStat"
+import { twMerge } from "tailwind-merge"
 
 const tabs = [
-  { label: "3D rendering", url: "/" },
-  { label: "Video processing", url: "/" },
-  { label: "Video editing", url: "/" },
-  { label: "3D interaction", url: "/" },
-  { label: "Video transcoding", url: "/" },
-  { label: "Code compiling", url: "/" },
-  { label: "Color grading", url: "/" },
-  { label: "Photo editing", url: "/" },
+  { label: "3D rendering", url: "/", primary: true },
+  { label: "Video processing", url: "/", primary: false },
+  { label: "Video editing", url: "/", primary: false },
+  { label: "3D interaction", url: "/", primary: false },
+  { label: "Video transcoding", url: "/", primary: false },
+  { label: "Code compiling", url: "/", primary: false },
+  { label: "Color grading", url: "/", primary: false },
+  { label: "Photo editing", url: "/", primary: false },
 ]
 
 const progressList = [
@@ -81,7 +82,6 @@ const MorePower = ({}: MorePowerProps) => {
             <ul
               className={classNames(
                 "flex-wrap flex overflow-visible",
-                "[&_li:first-of-type_a]:text-[#9091ff]",
                 "[&_li:last-of-type:a_span]:hidden",
                 "[&_li:last-child_.slash]:hidden"
               )}
@@ -94,7 +94,13 @@ const MorePower = ({}: MorePowerProps) => {
                       "group flex items-center text-[32px] text-[#86868b] leading-[36px] font-display font-semibold pb-[5px]"
                     )}
                   >
-                    <span className="group-hover:text-white group-hover:underline">
+                    <span
+                      className={twMerge(
+                        tab.primary
+                          ? "text-color-purple-2"
+                          : "group-hover:text-white group-hover:underline"
+                      )}
+                    >
                       {tab.label}
                     </span>
                     <span className="text-[#86868b] mx-[8px] slash">/</span>
