@@ -2,19 +2,7 @@ import Link from "next/link"
 import Container from "../atoms/Container"
 import NavLink from "../atoms/NavLink"
 import { AppleIcon, BagIcon, SearchIcon } from "../atoms/Icons"
-
-const menuList = [
-  { label: "Store", url: "#" },
-  { label: "Mac", url: "#" },
-  { label: "iPad", url: "#" },
-  { label: "Iphone", url: "#" },
-  { label: "Watch", url: "#" },
-  { label: "AirPods", url: "#" },
-  { label: "TV & Home", url: "#" },
-  { label: "Entertainment", url: "#" },
-  { label: "Accessories", url: "#" },
-  { label: "Support", url: "#" },
-]
+import { menuList } from "@/constants"
 
 const Header = () => {
   return (

@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="pt-[50px]">
       <Container>
         <div className="flex flex-col items-center">
-          <Text as="p" variant="text-24">
+          <Text as="p" variant="text24">
             Mac Studio
           </Text>
 

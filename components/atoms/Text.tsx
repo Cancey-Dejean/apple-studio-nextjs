@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge"
 type TextProps = {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
   variant?:
-    | "text-24"
+    | "text24"
     | "text80"
     | "text19"
     | "text96"
