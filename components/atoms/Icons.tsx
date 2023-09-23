@@ -1,13 +1,15 @@
 type IconProps = {
   className?: string
+  height?: string
+  width?: string
 }
 
-const AppleIcon = ({ className = "" }: IconProps) => {
+const AppleIcon = ({ className = "", height = "51" }: IconProps) => {
   return (
     <svg
-      height="44"
+      height={height}
+      // width="14"
       viewBox="0 0 14 44"
-      width="14"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
@@ -16,12 +18,12 @@ const AppleIcon = ({ className = "" }: IconProps) => {
   )
 }
 
-const SearchIcon = ({ className = "" }: IconProps) => {
+const SearchIcon = ({ className = "", height }: IconProps) => {
   return (
     <svg
+      height={height}
       xmlns="http://www.w3.org/2000/svg"
-      width="15px"
-      height="44px"
+      // width="15px"
       viewBox="0 0 15 44"
       className={className}
     >
@@ -30,12 +32,11 @@ const SearchIcon = ({ className = "" }: IconProps) => {
   )
 }
 
-const BagIcon = ({ className = "" }: IconProps) => {
+const BagIcon = ({ className = "", height }: IconProps) => {
   return (
     <svg
-      height="44"
+      height={height}
       viewBox="0 0 14 44"
-      width="14"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >

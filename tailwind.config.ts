@@ -15,13 +15,16 @@ const config: Config = {
         "color-lightgrey": "#fafafa",
         "color-grey": "#d2d2d7",
         "color-blue": "#0071e3",
+        "color-blue-hover": "#06c",
         "color-powder-blue": "#c7f8ff",
         "color-purple": "#9d44fd",
         "color-purple-2": "#9091ff",
+        "color-black": "#1d1d1f",
       },
       fontFamily: {
         body: [
           "SF Pro Text",
+          "Inter",
           "SF Pro Icons",
           "Helvetica Neue",
           "Helvetica",
@@ -30,6 +33,7 @@ const config: Config = {
         ],
         display: [
           "SF Pro Display",
+          "Inter",
           "SF Pro Icons",
           "Helvetica Neue",
           "Helvetica",

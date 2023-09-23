@@ -1,6 +1,7 @@
 import Header from "@/components/organisms/Header"
 import "./globals.css"
 import type { Metadata } from "next"
+import HeaderApple from "@/components/organisms/HeaderApple"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col">
-        <Header />
+        {/* <Header /> */}
+        <HeaderApple />
         <main className="flex-1">{children}</main>
       </body>
     </html>
